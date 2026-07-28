@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#FAF6ED">
+<title>Бібліотека</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="shelfView" class="view active">
+    <header class="shelf-header">
+      <h1>Бібліотека</h1>
+    </header>
+    <div id="shelves"></div>
+  </div>
+
+  <div id="readerView" class="view">
+    <button id="closeBtn" class="close-btn" aria-label="Закрити">✕</button>
+    <div id="page" class="page"></div>
+    <div class="reader-nav">
+      <button id="prevBtn" class="nav-btn" aria-label="Попередня сторінка">‹</button>
+      <div id="dots" class="dots"></div>
+      <button id="nextBtn" class="nav-btn" aria-label="Наступна сторінка">›</button>
+    </div>
+  </div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
