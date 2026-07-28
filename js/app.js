@@ -124,12 +124,16 @@
     }
     inner += `<div class="page-text">${escapeHtml(p.text)}</div>`;
     if (isLast){
-      inner += `<div class="page-end"><div class="again">Кінець</div></div>`;
+      inner += `<div class="page-end"><div class="again">Кінець</div><button id="backToShelfBtn" class="back-btn">← До бібліотеки</button></div>`;
       markRead(currentBook.id);
     }
     inner += '</div>';
     pageEl.innerHTML = inner;
     pageEl.scrollTop = 0;
+
+    if (isLast){
+      document.getElementById('backToShelfBtn').addEventListener('click', closeBook);
+    }
 
     prevBtn.disabled = isFirst;
     nextBtn.disabled = isLast;

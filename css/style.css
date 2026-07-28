@@ -180,6 +180,18 @@ body{
   color:var(--ink-soft);
   margin-top:18px;
 }
+.back-btn{
+  display:inline-block;
+  margin-top:14px;
+  background:none;
+  border:none;
+  font-family:'Inter',sans-serif;
+  font-size:14px;
+  color:var(--navy);
+  cursor:pointer;
+  padding:8px 4px;
+}
+.back-btn:hover{color:var(--poppy);}
 
 .reader-nav{
   position:absolute;
